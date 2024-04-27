@@ -9,5 +9,5 @@ API endpoints:
     [NOTE: non-superuser will return them self. super user will return all user]
     /auth/users/                
 
-    /api/login/           
+    /api/api-token-auth/           
 
