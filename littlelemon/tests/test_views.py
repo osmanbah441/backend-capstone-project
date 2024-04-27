@@ -11,7 +11,7 @@ class MenuViewTest(TestCase):
         menus = Menu.objects.all()
         serializer = MenuSerializer(menus, many=True)
 
-        response = self.client.get('/restaurant/menu/')
+        response = self.client.get('/api/menu-items/')
         
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.data, serializer.data)
